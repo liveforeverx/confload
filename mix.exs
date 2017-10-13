@@ -4,7 +4,7 @@ defmodule Confload.Mixfile do
   def project do
     [
       app: :confload,
-      version: "0.1.0",
+      version: "0.2.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
       deps: deps(),
@@ -24,7 +24,7 @@ defmodule Confload.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:file_system, "~> 0.1.5"},
+      {:file_system, "~> 0.1.5", optional: true},
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end

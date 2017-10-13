@@ -63,7 +63,6 @@ defmodule Confload do
   end
 
   defp stop_watcher() do
-    IO.inspect({:stop, :watcher})
     stop_child(:confload_watcher)
     stop_child(__MODULE__.Watcher)
   end

@@ -10,7 +10,8 @@ configuration changes.
 Additional feature to allow config live reloading (watching the configuration file and
 automaticly reload configuration on change).
 
-Per default it is disabled, set `watch: true` to enable it.
+Per default it is disabled, set `watch: true` to enable it. You need to add `file_system`
+to you dependencies. It is optional now.
 
 Inspired by [exrm_reload](https://github.com/xerions/exrm_reload).
 
