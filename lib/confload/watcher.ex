@@ -21,4 +21,8 @@ defmodule Confload.Watcher do
     end
     {:noreply, state}
   end
+  def handle_info({:file_event, _, :stop}, state) do
+    Logger.warn "configuration change monitor stopped"
+    {:noreply, state}
+  end
 end
